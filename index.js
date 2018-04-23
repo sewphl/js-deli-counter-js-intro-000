@@ -22,7 +22,7 @@ function currentLine(katzDeli) {
     for (let i = 0; i<(katzDeli.length); i++) {
       status = status + i+1 + ". " + katzDeli[i];
       if (katzDeli.length>1 & i<(katzDeli.length-1)) {
-        status = status + ",";
+        status = status + ", ";
       }
     }
     return(status);
