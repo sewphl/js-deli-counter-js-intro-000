@@ -20,7 +20,7 @@ function currentLine(katzDeli) {
   }  else {
     var status = "The line is currently: ";
     for (let i = 0; i<(katzDeli.length); i++) {
-      status = status + str(i+1) + ". " + katzDeli[i];
+      status = status + (i+1).toString() + ". " + katzDeli[i];
       if (katzDeli.length>1 & i<(katzDeli.length-1)) {
         status = status + ", ";
       }
