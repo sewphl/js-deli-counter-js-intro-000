@@ -19,8 +19,12 @@ function currentLine(katzDeli) {
     return("The line is currently empty.");
   }  else {
     var status = "The line is currently: ";
-    for (let i = 0; i<katzDeli.length; i++) {
-      return()
+    for (let i = 0; i<(katzDeli.length); i++) {
+      status = status + i+1 + ". " + katzDeli[i];
+      if (katzDeli.length>1 & i<(katzDeli.length-1)) {
+        status = status + ",";
+      }
     }
+    return(status);
   }
 }
